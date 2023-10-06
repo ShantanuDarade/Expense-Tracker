@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 380px;
+}
+
+.addTransaction-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(155, 152, 152);
+    gap: 10px;
+    padding: 15px 20px;
+    margin: 15px 20px;
+}
+.addTransaction-container input {
+    outline: none;
+    padding: 10px 12px;
+    border-radius: 4px;
+    border: 1px solid rgb(108, 107, 107);
+}
+.radio-div {
+    display: flex;
+}
+.radio-div input {
+    width: unset;
+    margin: 0 10px;
+}
+
+.addTransaction-container button {
+    border: none;
+    background-color: #5372F0;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    height: 35px;
+}
+.income-expense {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+.income-div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(202, 200, 200);
+    border-radius: 3px;
+    padding: 10px 15px;
+    width: 120px;
+    text-align: center;
+}
+.list {
+    margin: 0;
+    list-style: none;
+    padding: 20px;
+}
+.list li {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 5px 10px;
+    margin: 5px 1px;
+    border: 0.5px solid rgb(188, 187, 187);
+}
+
+.list li.incomelist {
+    border-right: 5px solid #5372F0;
+}
+  
+.list li.expenselist {
+    border-right: 5px solid #6C757D;
+}
+
+.delete-btn {
+    cursor: pointer;
+    background-color: #6C757D;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.list li:hover .delete-btn {
+    cursor: pointer;
+    opacity: 1;
+}
+h1 {
+    text-align: center;
+    color: #5372F0;
+}
+.history {
+    color: #5372F0;
+    text-align: center;
+    margin-bottom: 0;
+}
+.balance-div {
+    color: #6C757D;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    font-size: 20px;
+}
